@@ -12,7 +12,7 @@ output "Slave_pub_ip" {
   value = aws_eip.slave-eip.public_ip
 }
 
-output "Master_pub_dns" {
+output "Slave_pub_dns" {
   value = aws_instance.slave-instance.public_dns
 }
 

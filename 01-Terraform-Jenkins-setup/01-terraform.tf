@@ -2,11 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-    random = {
-      source  = "hashicorp/random"
-      version = "3.1.0"
+      version = "5.93.0"
     }
     local = {
       source  = "hashicorp/local"
@@ -14,13 +10,13 @@ terraform {
     }
     tls = {
       source  = "hashicorp/tls"
-      version = "3.1.0"
+      version = "4.0.6"
     }
   }
 }
 
 provider "aws" {
-  region = local.region
+  region     = local.region
   access_key = local.access_key
   secret_key = local.secret_key
 }
