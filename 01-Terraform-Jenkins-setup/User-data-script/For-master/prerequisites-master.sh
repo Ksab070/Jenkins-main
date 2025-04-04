@@ -19,5 +19,6 @@ yum install java-17-amazon-corretto jenkins nano git -y
 #Start Jenkins 
 systemctl enable jenkins && systemctl start jenkins
 
-#Read the initial admin password 
-cat /var/lib/jenkins/secrets/initialAdminPassword
+#Pass the initial admin password to terraform 
+cat /var/lib/jenkins/secrets/initialAdminPassword > /tmp/password.txt
+

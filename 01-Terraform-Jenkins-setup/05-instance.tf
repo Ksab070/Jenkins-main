@@ -49,6 +49,7 @@ resource "aws_instance" "master-instance" {
   tags = merge(local.aws_tags, {
     "Name" = "Jenkins-master"
   })
+
 }
 
 #Slave instance
