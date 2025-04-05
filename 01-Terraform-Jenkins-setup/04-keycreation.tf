@@ -14,6 +14,7 @@ resource "local_file" "ssh_key_local" {
 resource "local_file" "jenkins_key_local" {
   filename        = "${path.module}/for_jenkins.pem"
   content = tls_private_key.key_for_jenkins.private_key_pem
+  file_permission = "0400"
 }
 
 

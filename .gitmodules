@@ -1,3 +1,6 @@
 [submodule "00-jenkins-shared-library"]
 	path = 00-jenkins-shared-library
 	url = https://github.com/Ksab070/jenkins-shared-library.git
+[submodule "03-Wanderlust-Mega-Project"]
+	path = 03-Wanderlust-Mega-Project
+	url = https://github.com/Ksab070/Wanderlust-Mega-Project.git
